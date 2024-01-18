@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esito Voto Check</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="loginPageContainer" id="loginPageContainer">
+      <div class="userIdContainer">
+        <p>Codice Personale</p>
+        <input
+          type="text"
+          placeholder="Inserire Codice Personale"
+          id="codicePersonale"
+        />
+      </div>
+      <div class="passwordContainer">
+        <p>Password</p>
+        <div class="passwordInput">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Inserire Password"
+          />
+          <img
+            class="eyeIcon"
+            id="eyeIcon"
+            src="./images/show.png"
+            alt="eye icon"
+          />
+        </div>
+      </div>
+      <div class="buttonContainer">
+        <button id="loginBtn">Accedi</button>
+        <p id="alertText">Controllare e inserire correttamente i dati</p>
+      </div>
+    </div>
+    <div class="viewPageContainer" id="viewPageContainer">
+      <!-- <div class="esitiRow">
+        <p>
+          Tecnologie e progettazione di sistemi informatici e di
+          telecomunicazioni
+        </p>
+        <div class="esito" id="esito">
+          <div class="cella">P</div>
+          <div class="cella">P</div>
+          <div class="cella">P</div>
+        </div>
+      </div> -->
+    </div>
+    <div class="loadPageContainer" id="loadPageContainer">
+      <div class="positivoContainer">
+        <div class="cella">P</div>
+        <p>Valutazione Positiva</p>
+      </div>
+      <div class="negativoContainer">
+        <div class="cella" style="background-color: #ff0000">N</div>
+        <p>Valutazione Negativa</p>
+      </div>
+      <div class="bluContainer">
+        <div class="cella" style="background-color: #0080b8">B</div>
+        <p>Valutazione In Blu</p>
+      </div>
+      <img src="./images/ZKZg.gif" alt="loading gif" height="30" width="30" />
+    </div>
+    <div class="errorPage" id="errorPage">
+      <p>
+        Errore durante il caricamento dei dati, reinserire correttamente le
+        credenziali e riprovare
+      </p>
+      <button id="riprovareBtn">Riprovare</button>
+    </div>
+    <div class="noNewVotePageContainer" id="noNewVotePageContainer">
+      <p>
+        Al momento non sono state caricate nuove valutazioni, riprova più tardi
+      </p>
+      <button id="noNewVoteBtn">Ok</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

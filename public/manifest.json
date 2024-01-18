@@ -1,0 +1,12 @@
+{
+  "name": "Esito Voto Check",
+  "version": "1.0.0",
+  "description": "Questa estensione semplifica la visualizzazione dei voti degli studenti sulla piattaforma web di Classeviva. Di solito, c'è un periodo di attesa di 24 ore dopo che un insegnante ha inserito i voti prima che gli studenti possano accedervi. Tuttavia, durante questo lasso di tempo, l'estensione offre un rapido indicatore visivo per distinguere se il voto caricato è positivo o negativo.",
+
+  "manifest_version": 3,
+  "author": "Halid Cisse",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Esito Voto Check"
+  }
+}

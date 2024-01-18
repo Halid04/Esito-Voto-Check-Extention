@@ -1,0 +1,233 @@
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  color: #cc1020;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.loginPageContainer {
+  background-color: white;
+  width: 30rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.viewPageContainer {
+  display: none;
+  background-color: white;
+  width: 30rem;
+  height: 15rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+  gap: 0.5rem;
+}
+
+.loadPageContainer {
+  display: none;
+  background-color: white;
+  width: 30rem;
+  height: 15rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.errorPage,
+.noNewVotePageContainer {
+  display: none;
+  background-color: white;
+  width: 30rem;
+  height: 15rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.errorPage p,
+.noNewVotePageContainer p {
+  text-align: center;
+  width: 70%;
+  color: black;
+  font-weight: 600;
+}
+
+.positivoContainer,
+.negativoContainer,
+.bluContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 2rem;
+}
+
+.positivoContainer p,
+.negativoContainer p,
+.bluContainer p {
+  color: black;
+  font-weight: 600;
+}
+
+.loadPageContainer img {
+  margin-top: 1rem;
+}
+
+.esitiRow {
+  /* border: 1px solid blue; */
+  width: 90%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.esitiRow p {
+  color: black;
+  width: 40%;
+  height: 3.5rem;
+  /* border: 1px solid red; */
+}
+
+.esito {
+  /* border: 1px solid red; */
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  gap: 1.5rem;
+  height: 3.5rem;
+  /* overflow-x: auto; */
+  scroll-behavior: smooth;
+}
+.esito::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+.esito p {
+  font-size: 14px;
+  color: black;
+  width: 10rem;
+}
+
+.cella {
+  background-color: #008000;
+  width: 45px;
+  height: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.userIdContainer,
+.passwordContainer,
+.buttonContainer {
+  /* border: 1px solid red; */
+  width: 17rem;
+  height: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 2px;
+}
+
+.userIdContainer input {
+  border: 2px solid #cc1020;
+  border-radius: 10px;
+  width: 94%;
+  padding: 8px 8px;
+  outline: none;
+}
+.userIdContainer input:focus,
+.passwordInput:focus-within {
+  border-color: #cc102086;
+}
+
+.passwordContainer input {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+
+.passwordInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #cc1020;
+  border-radius: 10px;
+  width: 94%;
+  padding: 7px 7px;
+}
+
+.eyeIcon {
+  height: 20px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  align-items: center;
+}
+
+.buttonContainer button,
+.errorPage button,
+.noNewVotePageContainer button {
+  width: 7rem;
+  height: 1.8rem;
+  background-color: #cc1020;
+  border: 0px solid;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.buttonContainer button:hover,
+.errorPage button:hover,
+.noNewVotePageContainer button:hover {
+  background-color: #cc1020f3;
+  transform: scale(0.97);
+}
+.buttonContainer button:active,
+.errorPage button:active,
+.noNewVotePageContainer button:active {
+  transform: scale(1.05);
+}
+
+.buttonContainer p {
+  font-size: 13px;
+}
+
+.alertTextUnderline {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
