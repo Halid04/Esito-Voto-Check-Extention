@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const app = express();
 const path = require("path");
 
-app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
 
 app.post("/process", async (req, res) => {
