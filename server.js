@@ -108,6 +108,7 @@ async function fetchData(codicePersonale, password) {
     return result;
   });
 
+  await page.close();
   await browser.close();
 
   return data;
