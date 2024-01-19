@@ -63,7 +63,7 @@ async function fetchData(codicePersonale, password) {
         : puppeteer.executablePath(),
   });
   const page = await browser.newPage();
-  await page.goto(url, { waitUntil: "domcontentloaded" });
+  await page.goto(url, { timeout: 80000, waitUntil: "domcontentloaded" });
   await page.type("#login", await codicePersonale);
   await page.type("#password", await password);
   await Promise.all([
