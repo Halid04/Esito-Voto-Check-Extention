@@ -22,7 +22,6 @@ app.use((req, res, next) => {
   next();
 });
 
-
 app.use(bodyParser.json());
 
 app.post("/process", async (req, res) => {

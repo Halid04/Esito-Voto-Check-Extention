@@ -33,7 +33,7 @@ loginBtn.addEventListener("click", () => {
     let codicePersonaleValue = codicePersonale.value;
     let passwordValue = password.value;
 
-    fetch("/process", {
+    fetch("https://esito-voto-check-extention.onrender.com/process", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
